@@ -1,0 +1,8 @@
+{
+  "/":         		 "index",
+
+  "/grafica":     "grafica",
+  "/video":    		 "video",
+  "/interviste":     "interviste",
+  "/spot":    		 "spot"
+}

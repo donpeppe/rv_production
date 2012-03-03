@@ -1,0 +1,30 @@
+-# contents in #head and #body will be appended to head and body tags in index.html, same thing for #title
+%div
+  #head
+    #title RV Videos
+    %link{ type: "text/sass", href: "/sass/reset.sass" }
+    %link{ type: "text/sass", href: "/sass/app.sass" }
+    %link{ type: "text/sass", href: "/sass/theme_red.sass", id: "theme" }
+  #body
+    #container
+      %header
+          
+        .rv
+          %h1 
+            %a{ href: "/" } 
+              RV
+              %span Production
+        
+        %nav
+          %a{ href: "/video" } Video
+          %a{ href: "/grafica" } Grafica
+          %a{ href: "/interviste" } Interviste
+          %a{ href: "/spot" } Spot
+          %a{ href: "/web" } Web
+      .clear
+          
+      #content
+        != yield
+  
+      %footer
+      
